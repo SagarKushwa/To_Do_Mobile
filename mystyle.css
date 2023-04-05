@@ -1,0 +1,434 @@
+*{box-sizing: border-box;}
+
+/* below code is only for TASK LIST area of the page. */
+
+header
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header span
+{
+   color: rgb(12, 172, 236);
+}
+
+header h1
+{
+   padding-left: 7vw;
+}
+
+/* below div is for remaining areas of the page. */
+
+a
+{
+    text-decoration: none;
+}
+
+.bg
+{
+    
+    background-color: rgb(198, 198, 198);
+}
+
+.bg1
+{
+    background-color: rgb(238, 233, 233);
+}
+
+.addtask
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15vw;
+}
+
+.addtask p
+{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+}
+
+.addtask span
+{
+    border-radius: 50%;
+    font-size: 30px;
+    padding-left: 10PX;
+    padding-right: 10PX;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    background-color: rgb(12, 172, 236);
+    color: aliceblue;
+}
+
+.back
+{
+   position: absolute;
+   top: 16%;
+   left: 4%;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.back span
+{
+    border-radius: 50%;
+    font-size: 24px;
+    padding-left: 10PX;
+    padding-right: 10PX;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: grey;
+    color: aliceblue; 
+}
+
+.mob
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.mob span
+{
+    border-radius: 50%;
+    font-size: 35px;
+    padding-left: 10PX;
+    padding-right: 10PX;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(12, 172, 236);
+    color: aliceblue;
+}
+
+.container
+{
+    display: flex;
+    gap: 3vh;
+    flex-wrap: wrap;
+
+}
+.box
+{
+    height: 300px; 
+    width: 330px;
+    background-color: white;
+    color: gray;
+    border: none;
+    border-radius: 10px; 
+}
+
+.box:hover
+{
+    box-shadow: 0px 2px 2px 3px rgb(97, 95, 95), 2px 0px 2px 3px rgb(205, 202, 202);
+    cursor:pointer;
+}
+
+.box input
+{
+    margin-left: 1.5vw;
+}
+
+.box label
+{
+    font-size: larger;
+}
+
+.box span
+{
+    text-decoration: line-through;
+    color: rgb(196, 192, 192);
+}
+
+.box2
+{
+   margin-bottom: 16vw; 
+}  
+
+.checkbox1
+{
+    height: 21px;
+    width: 22px;
+}
+
+.line
+{
+    text-decoration: line-through;
+}
+
+/* Below:--Css for index1.html */
+.blr
+{
+    filter: blur(3px);
+    opacity: 1px;
+}
+
+.blow
+{
+    display: flex;
+    justify-content: center;    
+}
+
+.popup
+{
+    position: absolute;
+    top: 31vh;
+    left: 35vw;
+    height: 30vh;
+    width: 30vw;
+    background-color: rgb(254, 252, 252);
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 3px rgb(205, 202, 202), 2px 0px 2px 3px rgb(180, 177, 177);
+
+}
+
+.cross  
+{
+    position: absolute;
+    top: 0vh;
+    left: 27vw;
+}
+
+.popup input
+{
+   height: 4vh;
+   width: 28vw;
+   border-color: rgb(180, 176, 176);
+   border-style: none;
+   background-color: rgb(241, 236, 236);
+   margin-left: 1vw;
+}
+
+.popup button
+{
+    
+    left: 21vw;
+    height: 6vh;
+    width: 8vw;
+    border-style: none;
+    border-radius: 5px;
+    background-color: rgb(12, 172, 236);
+    color: aliceblue;
+    margin-top: 3vh;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.Abox
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* Below:--media querries for whole project */
+
+@media (min-width:501px)
+{
+    .mob
+    {
+        display: none;
+    }
+
+    .bg1
+    {
+        height: 150vh;
+    }
+
+    .b1 a 
+    {
+       text-decoration: none;    
+    }    
+
+    
+    .popup
+    {
+        width: 305px;
+        height: 30%;
+    }
+
+    .popup input
+    {
+       height: 5vh;
+       width: 290px;
+       border-color: rgb(180, 176, 176);
+       border-style: none;
+       background-color: rgb(241, 236, 236);
+       margin-left: 1vw;
+       font-size: large;
+    }
+
+    .popup button
+    {
+        position: absolute;
+        left: 150px;
+        height: 6vh;
+        width: 140px;
+        border-style: none;
+        border-radius: 5px;
+        background-color: rgb(12, 172, 236);
+        color: aliceblue;
+        margin-top: 4vh;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .cross  
+    {
+        position: absolute;
+        top: 0px;
+        left: 260px;
+    }
+
+}
+
+@media (max-width:500px)
+{
+    .addtask
+    {
+        display: none;
+    } 
+    
+    .box
+    {
+        width: 260px;
+    }
+
+    .box input
+    {
+        margin-left: 5vw;
+    }
+    
+    .disp
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup
+    {
+        
+        width: 280px;
+        height: 30%;
+        margin-left: -15vw;
+    }
+
+    .cross  
+    {
+        position: absolute;
+        top: 0px;
+        left: 240px;
+    }
+    
+    .popup input
+   {
+      height: 5vh;
+      width: 260px;
+      border-color: rgb(180, 176, 176);
+      border-style: none;
+      background-color: rgb(241, 236, 236);
+      margin-left: 1vw;
+      font-size: large;
+    }
+
+    .popup button
+    {
+        position: absolute;
+        left: 140px;
+        height: 6vh;
+        width: 130px;
+        border-style: none;
+        border-radius: 5px;
+        background-color: rgb(12, 172, 236);
+        color: aliceblue;
+        margin-top: 4vh;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .back
+    {
+        position: absolute;
+        top: 13.5%;
+        left: 10%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .Abox
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg1
+    {
+        height: 150vh;
+    }
+}
+
+@media (max-width:1040px)
+{
+    .container
+    {
+        align-items: center;
+        justify-content: center;
+    }  
+
+    .Abox
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4vw;
+    }
+
+    .bg1
+    {
+        height: 150vh;
+    }
+
+    .b1 a 
+    {
+       text-decoration: none;    
+    }
+
+}
+
+@media (min-width:1040px)
+{
+    .box1
+    {
+       margin-left: 16vw; 
+    }  
+
+    .Abox
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20vw;
+    }
+
+    .bg1
+    {
+        height: 150vh;
+    }
+
+    .b1 a 
+    {
+       text-decoration: none;    
+    }
+
+    .bg
+{
+    /* width: 1800px; */
+    background-color: rgb(198, 198, 198);
+}
+}
+
+
